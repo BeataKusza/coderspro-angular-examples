@@ -7,4 +7,8 @@ myApp.controller('myAppController', ['$scope', function myAppController($scope) 
     $scope.names.push($scope.imputName);
     $scope.imputName = '';
   }
+  $scope.removeName = function(nameText) {
+    var i =$scope.names.indexOf(nameText);
+    $scope.scope.splice(i, 1);
+  }
 }]);
