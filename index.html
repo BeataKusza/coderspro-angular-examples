@@ -1,12 +1,16 @@
-<html>
+<html ng-app>
 <head>
-</head>
-  <meta charset="utf-8">
-  <title>Angular examples</title>
-  <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<body>
-  Name: <input ng-model="textInput" type="text">
-  Hello! {{ textInput }}!
 
+  <meta charset="UTF-8">
+  <title>Angular examples</title>
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
+</head>
+<body>
+  <div ng-controller="myAppController">
+  Name: <input ng-model="textInput" type="text">
+  Surname: <input ng-model="surname" type="text">
+  Greetings: <input ng-model="greetings" type="text">
+ {{ name }} {{ surname }}. {{ greetings }}!
+  </div>
 </body>
 </html>
