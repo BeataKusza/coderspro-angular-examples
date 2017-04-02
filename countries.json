@@ -1,20 +1,25 @@
-flag
 [
   {
-    "name": "China",
+  "name": "China",
   "population": 1235344454,
-  "flag": "//www.worldatlas.com/webimage/flags/countrys/asia/china.htm"
+  "flag": "//www.worldatlas.com/webimage/flags/countrys/asia/china.html",
+  "capital": "Bejing",
+  "gdp": 13000
   },
 
   {
     "name": "India",
     "population": 126732789,
-    "flag": "//www.aliexpress.com/cheap/cheap-india-flag.html"
+    "flag": "//www.aliexpress.com/cheap/cheap-india-flag.html",
+    "capital": "New Delhi",
+    "gdp": 8000
   },
 
   {
     "name": "United States",
     "population": 12437378,
-    "flag": "://www.google.pl/search?q=china+flag&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiTsoDkv4XTAhVLEJoKHWnHAewQ_AUIBigB&biw=1366&bih=662&dpr=1#tbm=isch&q=united+state+flag&*&imgrc=fpPlvILeLOI0EM:"
-  },
+    "flag": "//www.google.pl/search?q=china+flag&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiTsoDkv4XTAhVLEJoKHWnHAewQ_AUIBigB&biw=1366&bih=662&dpr=1#tbm=isch&q=united+state+flag&*&imgrc=fpPlvILeLOI0EM:",
+    "capital": "Washington",
+    "gdp": 30000
+  }
 ]

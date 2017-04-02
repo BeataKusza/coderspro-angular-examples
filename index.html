@@ -11,11 +11,15 @@
         <th>Name</th>
         <th>Population</th>
         <th>Flag</th>
+        <th>Capital</th>
+        <th>GDP</th>
     </tr>
     <tr ng-repeat="country in countries">
         <td>{{ country.name }}</td>
         <td>{{ country.population }}</td>
-        <td>{<img ng-scr="{{ country.flag }}" alt="flag" widht="120"></td>
+        <td><img ng-scr="{{ country.flag }}" alt="flag" widht="120"></td>
+        <td>{{ country.capital }}</td>
+        <td>{{ conutry.gdp | currency:'PLN' }}</td>
     </tr>
 </table>
 </body>
