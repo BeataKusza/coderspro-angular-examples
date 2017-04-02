@@ -1,26 +1,14 @@
-<html ng-app="myApp">
+<html ng-app="countryApp">
 <head>
     <meta charset="UTF-8">
     <title>Angular examples</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.js"></script>
     <script src="app.js"></script>
 </head>
-<body ng-controller="myAppCtrl">
+<body>
 <table>
-    <tr>
-        <th>Name</th>
-        <th>Population</th>
-        <th>Flag</th>
-        <th>Capital</th>
-        <th>GDP</th>
-    </tr>
-    <tr ng-repeat="country in countries">
-        <td>{{ country.name }}</td>
-        <td>{{ country.population }}</td>
-        <td><img ng-scr="{{ country.flag }}" alt="flag" widht="120"></td>
-        <td>{{ country.capital }}</td>
-        <td>{{ conutry.gdp | currency:'PLN' }}</td>
-    </tr>
+  <div ng-view></div>
 </table>
 </body>
 </html>
