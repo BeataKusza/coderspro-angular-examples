@@ -1,19 +1,20 @@
 <html ng-app="myApp">
 <head>
-
-  <meta charset="UTF-8">
-  <title>Angular examples</title>
-  <script scr="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
-  <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <title>Angular examples</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
+    <script src="app.js"></script>
 </head>
-<body ng-controller="myAppController">
-  <ul ng-repeat="name in names">
-    <li>{{ name }}
-    <a href="#" ng-click="removeName(name)">Remove</a>
-  </li>
-  </ul>
-  <form ng-submit="addName()"></form>
-  <input type="text" ng-model="imputName">
-  <input type="submit">
+<body ng-controller="myAppCtrl">
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Population</th>
+    </tr>
+    <tr ng-repeat="country in countries">
+        <td>{{ country.city }}</td>
+        <td>{{ country.population }}</td>
+    </tr>
+</table>
 </body>
 </html>
